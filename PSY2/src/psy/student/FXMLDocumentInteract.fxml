@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="604.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="psy.student.FXMLDocumentInteractController">
+   <children>
+      <HBox layoutX="84.0" layoutY="76.0" spacing="50.0">
+         <children>
+            <Button fx:id="buttonFilm" layoutX="84.0" layoutY="77.0" mnemonicParsing="false" onAction="#handleButtonFilmEvent" prefHeight="69.0" prefWidth="176.0" text="心理电影" AnchorPane.leftAnchor="84.0" AnchorPane.topAnchor="77.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonPhoto" layoutX="311.0" layoutY="76.0" mnemonicParsing="false" onAction="#handleButtonPhotoEvent" prefHeight="69.0" prefWidth="176.0" text="心理图片" AnchorPane.leftAnchor="311.0" AnchorPane.topAnchor="76.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="84.0" layoutY="203.0" spacing="50.0">
+         <children>
+            <Button fx:id="buttonMusic" layoutX="85.0" layoutY="206.0" mnemonicParsing="false" onAction="#handleButtonMusicEvent" prefHeight="69.0" prefWidth="176.0" text="心理音乐" AnchorPane.leftAnchor="84.0" AnchorPane.topAnchor="206.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonArticle" layoutX="311.0" layoutY="203.0" mnemonicParsing="false" onAction="#handelButtonArticleEvent" prefHeight="69.0" prefWidth="176.0" text="心理文库">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Label layoutX="25.0" layoutY="14.0" prefHeight="38.0" prefWidth="97.0" text="心理互动" />
+   </children>
+</AnchorPane>

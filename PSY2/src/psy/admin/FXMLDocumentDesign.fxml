@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="psy.admin.FXMLDocumentDesignController">
+  <children>
+    <VBox fx:id="vboxTool" alignment="TOP_CENTER" prefHeight="561.0" prefWidth="80.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="39.0">
+      <children>
+        <Button id="buttonRadio" fx:id="buttonSingle" maxHeight="-1.0" mnemonicParsing="false" onAction="#handleButtonSingleEvent" prefHeight="30.0" text="单选题">
+          <VBox.margin>
+            <Insets bottom="5.0" top="5.0" fx:id="x1" />
+          </VBox.margin>
+        </Button>
+        <Button id="button" fx:id="buttonMultiple" maxHeight="40.0" mnemonicParsing="false" onAction="#handleButtonMultipleEvent" prefHeight="30.0" text="多选题" VBox.margin="$x1" />
+        <Button id="button" fx:id="buttonWrite" maxHeight="40.0" mnemonicParsing="false" onAction="#handleButtonWriteEvent" prefHeight="30.0" text="填空题" VBox.margin="$x1" />
+      </children>
+      <padding>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding>
+    </VBox>
+    <HBox fx:id="hboxSettins" alignment="CENTER" prefHeight="39.0" prefWidth="720.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <Button fx:id="buttonSave" mnemonicParsing="false" onAction="#handleButtonSaveEvent" prefHeight="25.0" text="保存本题">
+          <HBox.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" fx:id="x2" />
+          </HBox.margin>
+        </Button>
+        <Button fx:id="butttonAdd" mnemonicParsing="false" onAction="#handleButtonAddEvent" prefHeight="25.0" text="继续加题" />
+        <Button id="buttonDelete" fx:id="buttonDeletePage" mnemonicParsing="false" onAction="#handleButtonDeletePage" prefHeight="25.0" text="删除本题" HBox.margin="$x2" />
+        <Button fx:id="buttonMoveUp" mnemonicParsing="false" onAction="#handleButtonMoveUpEvent" prefHeight="25.0" text="上移本题" HBox.margin="$x2" />
+        <Button fx:id="buttonMoveDown" mnemonicParsing="false" onAction="#handleButtonMoveDownEvent" prefHeight="25.0" text="下移本题">
+          <HBox.margin>
+            <Insets bottom="2.0" left="2.0" right="20.0" top="2.0" />
+          </HBox.margin>
+        </Button>
+        <Button fx:id="buttonDeleteItem" mnemonicParsing="false" onAction="#handleButtonDeleteItemEvent" prefHeight="25.0" text="删除该选项" HBox.margin="$x2" />
+        <Button fx:id="buttonAddItem" mnemonicParsing="false" onAction="#handleButtonAddItemEvent" prefHeight="25.0" text="增加选项" HBox.margin="$x2" />
+      </children>
+    </HBox>
+    <AnchorPane fx:id="panePage" prefHeight="481.0" prefWidth="720.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="39.0">
+      <children>
+        <VBox prefHeight="481.0" prefWidth="720.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <children>
+            <TitledPane animated="false" prefHeight="72.0" prefWidth="720.0" text="题目">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="80.0" prefWidth="200.0">
+                  <children>
+                    <TextField fx:id="textFieldTitle" prefHeight="40.0" prefWidth="640.0" promptText="输入问题" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  </children>
+                </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" prefHeight="409.0" prefWidth="710.0" text="选项">
+              <content>
+                <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="375.0" prefWidth="706.0">
+                  <children>
+                              <ListView fx:id="listViewOptions" layoutX="10.0" layoutY="7.0" prefHeight="214.0" prefWidth="689.0" />
+                    <VBox fx:id="vboxItems" layoutX="14.0" layoutY="240.0" prefHeight="161.0" prefWidth="508.0" AnchorPane.bottomAnchor="22.40000000000009" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="224.4000000000001" AnchorPane.topAnchor="240.0">
+                      <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                      </padding>
+                    </VBox>
+                  </children>
+                </AnchorPane>
+              </content>
+            </TitledPane>
+          </children>
+        </VBox>
+      </children>
+    </AnchorPane>
+    <HBox alignment="CENTER" prefHeight="80.0" prefWidth="720.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="0.0">
+      <children>
+        <Button fx:id="buttonLeft" mnemonicParsing="false" onAction="#handleButtonLeftHandle" prefHeight="25.0" text="上一题" HBox.margin="$x2" />
+        <ChoiceBox id="choiceBoxPage" fx:id="choiceBoxCurrent" prefHeight="25.0" prefWidth="56.0" HBox.margin="$x2">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="项 1" />
+              <String fx:value="项 2" />
+              <String fx:value="项 3" />
+            </FXCollections>
+          </items>
+        </ChoiceBox>
+        <Label fx:id="labelTotal" text="共?题" HBox.margin="$x2" />
+        <Button fx:id="buttonRight" mnemonicParsing="false" onAction="#handleButtonRightEvent" prefHeight="25.0" text="下一题" HBox.margin="$x2" />
+        <Button id="buttonSave" fx:id="buttonSaveQuestionnaire" mnemonicParsing="false" onAction="#handleButtonSaveQuestionnaireEvent" prefHeight="25.0" text="保存问卷">
+          <HBox.margin>
+            <Insets left="30.0" />
+          </HBox.margin>
+        </Button>
+      </children>
+    </HBox>
+  </children>
+</AnchorPane>

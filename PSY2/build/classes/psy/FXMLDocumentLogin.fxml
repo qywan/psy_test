@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="341.0" prefWidth="417.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="psy.FXMLDocumentLoginController">
+  <children>
+    <ImageView fitHeight="49.99999773608471" fitWidth="300.0" layoutX="63.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../res/logo.png" />
+      </image>
+    </ImageView>
+    <ChoiceBox fx:id="choiceLogin" layoutX="38.0" layoutY="83.0" prefHeight="23.0" value="管理员">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="管理员" />
+          <String fx:value="学生" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <GridPane alignment="CENTER" layoutX="38.0" layoutY="122.0" prefHeight="132.0" prefWidth="349.0">
+      <children>
+        <TextField fx:id="textId" alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="216.0" promptText="请输入用户名" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <PasswordField fx:id="textPwd" prefHeight="44.0" prefWidth="349.0" promptText="请输入密码" text="" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Label fx:id="labelTipId" prefWidth="349.0" text="" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label fx:id="labelTipPwd" prefWidth="349.0" text="" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="358.0" minWidth="10.0" prefWidth="281.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <Button fx:id="buttonLogin" alignment="CENTER" layoutX="39.0" layoutY="270.0" onAction="#handleButtonLoginAction" text="登    录">
+      <font>
+        <Font size="14.0" fx:id="x1" />
+      </font>
+    </Button>
+    <Button id="buttonLogin" fx:id="buttonGoRegister" alignment="CENTER" font="$x1" layoutX="308.0" layoutY="270.0" onAction="#handleButtonGoRegisterAction" text="学生注册" />
+    <Label fx:id="labelTipLogin" alignment="CENTER_LEFT" contentDisplay="LEFT" layoutX="39.0" layoutY="300.0" prefHeight="23.0" prefWidth="349.0000915527344" text="" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="600.0" prefWidth="970.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="psy.admin.FXMLDocumentMainController">
+  <center>
+    <AnchorPane fx:id="paneContent" prefHeight="570.0" prefWidth="843.0">
+      <padding>
+        <Insets />
+      </padding>
+    </AnchorPane>
+  </center>
+  <left>
+    <VBox prefHeight="200.0" prefWidth="150.0">
+      <children>
+        <Button id="buttonClasses" fx:id="buttonClass" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonClassEvent" prefHeight="50.0" prefWidth="200.0" text="班级信息" VBox.vgrow="SOMETIMES">
+          <VBox.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" fx:id="x1" />
+          </VBox.margin>
+        </Button>
+        <Button id="button" fx:id="buttonAccount" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAccountEvent" prefHeight="50.0" prefWidth="200.0" text="测评账号" VBox.margin="$x1" />
+            <Button fx:id="buttonReport" mnemonicParsing="false" onAction="#handleButtonReportEvent" prefHeight="50.0" prefWidth="200.0" text="测评报告">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin>
+            </Button>
+        <Button id="button" fx:id="buttonQuestionnaire" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonQuestionnairetEvent" prefHeight="50.0" prefWidth="200.0" text="自定义导入量表" VBox.margin="$x1" />
+        <Button id="button" fx:id="buttonConsult" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonCousultEvent" prefHeight="50.0" prefWidth="200.0" text="在线咨询" VBox.margin="$x1" />
+      </children>
+      <padding>
+        <Insets top="4.0" />
+      </padding>
+      <BorderPane.margin>
+        <Insets />
+      </BorderPane.margin>
+    </VBox>
+  </left>
+  <top>
+    <Pane fx:id="paneTitle" prefHeight="30.0" prefWidth="800.0">
+      <children>
+        <Label fx:id="labelName" layoutX="22.0" layoutY="9.0" text="Name" />
+      </children>
+    </Pane>
+  </top>
+</BorderPane>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<StackPane id="StackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="psy.admin.FXMLDocumentConsultController">
+  <children>
+    <VBox alignment="TOP_CENTER" prefHeight="570.0" prefWidth="791.0">
+      <children>
+        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+          <children>
+                  <Label alignment="CENTER" prefHeight="88.0" prefWidth="143.0" text="咨询信息">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+          </children>
+        </HBox>
+            <HBox>
+               <children>
+                  <Label text="咨询对象：">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="choiceBoxObject" onDragDone="#handleChoiceBoxObjectsEvent" prefHeight="30.0" prefWidth="118.0" />
+               </children>
+               <VBox.margin>
+                  <Insets left="60.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label prefHeight="35.0" prefWidth="108.0" text="咨询标题：" textAlignment="RIGHT">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="60.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="textFiledTitle" prefHeight="34.0" prefWidth="367.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="咨询内容：">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="60.0" top="15.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextArea fx:id="textAreaAsk" prefHeight="275.0" prefWidth="379.0">
+                     <HBox.margin>
+                        <Insets top="15.0" />
+                     </HBox.margin>
+                  </TextArea>
+               </children>
+               <opaqueInsets>
+                  <Insets top="10.0" />
+               </opaqueInsets>
+            </HBox>
+            <HBox>
+               <children>
+                  <Button fx:id="buttonSubmit" mnemonicParsing="false" onAction="#handleButtonSubmitEvent" text="提交">
+                     <HBox.margin>
+                        <Insets left="120.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="buttomCancel" mnemonicParsing="false" onAction="#handleButtonCancelEvent" text="取消">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="100.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+      </children>
+    </VBox>
+  </children>
+</StackPane>

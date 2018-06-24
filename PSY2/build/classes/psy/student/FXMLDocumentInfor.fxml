@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="psy.student.FXMLDocumentInforController">
+  <children>
+    <GridPane fx:id="gridPane" disable="false" layoutX="390.0" layoutY="154.0" prefHeight="262.0" prefWidth="500.0">
+      <children>
+        <Label alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="149.0" text="用户名" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <font>
+            <Font size="16.0" fx:id="x1" />
+          </font>
+          <GridPane.margin>
+            <Insets right="5.0" fx:id="x2" />
+          </GridPane.margin>
+        </Label>
+        <TextField id="textField" fx:id="textFieldName" disable="true" prefWidth="200.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label alignment="CENTER_RIGHT" font="$x1" prefHeight="23.0" prefWidth="149.0" text="班级" GridPane.columnIndex="0" GridPane.margin="$x2" GridPane.rowIndex="1" />
+        <TextField fx:id="textFieldClass" disable="true" editable="true" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label alignment="CENTER_RIGHT" font="$x1" prefHeight="23.0" prefWidth="149.0" text="性别" GridPane.columnIndex="0" GridPane.margin="$x2" GridPane.rowIndex="2" />
+        <ChoiceBox fx:id="choiceBoxSex" disable="true" prefHeight="20.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="项 1" />
+              <String fx:value="项 2" />
+              <String fx:value="项 3" />
+            </FXCollections>
+          </items>
+        </ChoiceBox>
+        <Label alignment="CENTER_RIGHT" font="$x1" prefHeight="23.0" prefWidth="149.0" text="出生年月" GridPane.columnIndex="0" GridPane.margin="$x2" GridPane.rowIndex="3" />
+        <TextField id="textBirth" fx:id="textFieldBirth" disable="true" prefWidth="200.0" promptText="xxxx-xx-xx" text="" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Label alignment="CENTER_RIGHT" font="$x1" prefHeight="23.0" prefWidth="149.0" text="联系方式" GridPane.columnIndex="0" GridPane.margin="$x2" GridPane.rowIndex="4" />
+        <TextField id="textPhone" fx:id="textFieldPhone" disable="true" prefWidth="200.0" promptText="电话" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="468.0" minWidth="10.0" prefWidth="104.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="831.0" minWidth="10.0" prefWidth="434.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints fillHeight="true" maxHeight="-1.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="-1.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="-1.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="-1.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="-1.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <ToggleButton fx:id="toggleButtonEdit" font="$x1" layoutX="991.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleButtonEditEvent" text="修改" />
+    <Button fx:id="buttonSave" font="$x1" layoutX="617.0" layoutY="473.0" mnemonicParsing="false" onAction="#handleButtonSaveEvent" text="保存修改" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane id="StackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="psy.admin.FXMLDocumentStudentAddController">
+  <children>
+    <VBox alignment="TOP_CENTER" prefHeight="468.0" prefWidth="400.0">
+      <children>
+        <Label alignment="CENTER" prefHeight="20.0" prefWidth="378.0" text="添加测评账号" textFill="#ffb800" textOverrun="CLIP" underline="false">
+          <font>
+            <Font size="14.0" />
+          </font>
+          <VBox.margin>
+            <Insets top="5.0" />
+          </VBox.margin>
+        </Label>
+        <GridPane alignment="CENTER" prefHeight="417.0" prefWidth="390.0">
+          <children>
+            <Label id="labelId" alignment="CENTER_LEFT" contentDisplay="CENTER" disable="false" prefWidth="146.0" text="学号" GridPane.columnIndex="0" GridPane.rowIndex="0">
+              <GridPane.margin>
+                <Insets right="10.0" top="10.0" fx:id="x1" />
+              </GridPane.margin>
+            </Label>
+            <Label id="labelId" alignment="CENTER_LEFT" contentDisplay="CENTER" prefWidth="146.0" text="姓名" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="1" />
+            <Label id="labelId" alignment="CENTER_LEFT" contentDisplay="CENTER" prefWidth="146.0" text="性别" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="2" />
+            <Label id="labelId" alignment="CENTER_LEFT" contentDisplay="CENTER" prefWidth="146.0" text="出生日期" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="3" />
+            <Label id="labelId" alignment="CENTER_LEFT" contentDisplay="CENTER" prefWidth="146.0" text="联系方式" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="4" />
+            <Label id="labelId" alignment="CENTER_LEFT" contentDisplay="CENTER" prefWidth="146.0" text="班级编号" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="5" />
+            <Label prefWidth="87.0" text="班级名" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <Label id="labelId" alignment="CENTER_LEFT" contentDisplay="CENTER" prefWidth="146.0" text="年级" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="7" />
+            <Label id="labelId" alignment="CENTER_LEFT" contentDisplay="CENTER" prefWidth="146.0" text="学校" GridPane.columnIndex="0" GridPane.margin="$x1" GridPane.rowIndex="8" />
+            <TextField fx:id="textFieldId" editable="true" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <TextField fx:id="textFieldName" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ChoiceBox fx:id="choiceBoxSex" GridPane.columnIndex="1" GridPane.rowIndex="2">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="项 1" />
+                  <String fx:value="项 2" />
+                  <String fx:value="项 3" />
+                </FXCollections>
+              </items>
+            </ChoiceBox>
+            <TextField fx:id="textFieldBirth" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="textFieldPhone" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ChoiceBox fx:id="choiceBoxClasses" onDragDone="#handleChoiceBoxClassesEvent" prefWidth="129.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="项 1" />
+                  <String fx:value="项 2" />
+                  <String fx:value="项 3" />
+                </FXCollections>
+              </items>
+            </ChoiceBox>
+            <TextField fx:id="textFieldClassName" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="textFieldGrade" editable="false" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="textFieldSchool" editable="false" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="107.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="263.0" minWidth="10.0" prefWidth="263.0" />
+          </columnConstraints>
+          <padding>
+            <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+          </padding>
+          <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+          <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+          </VBox.margin>
+        </GridPane>
+        <Button fx:id="buttonSure" mnemonicParsing="false" onAction="#handleButtonSureEvent" text="确定">
+          <VBox.margin>
+            <Insets top="5.0" />
+          </VBox.margin>
+        </Button>
+      </children>
+    </VBox>
+  </children>
+</StackPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="psy.utils.FXMLDocumentCURDController">
+  <children>
+    <HBox alignment="CENTER" layoutX="0.0" layoutY="11.0" prefHeight="50.0" prefWidth="800.0">
+      <children>
+        <ChoiceBox fx:id="choiceBoxType" prefHeight="25.0" prefWidth="52.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="项 1" />
+              <String fx:value="项 2" />
+              <String fx:value="项 3" />
+            </FXCollections>
+          </items>
+          <HBox.margin>
+            <Insets right="2.0" />
+          </HBox.margin>
+        </ChoiceBox>
+        <TextField id="textFieldSerar" fx:id="textFieldSearch" prefHeight="36.0" prefWidth="378.0" />
+        <Button fx:id="buttonSearch" mnemonicParsing="false" onAction="#handleButtonSearchEvent" prefHeight="25.000099999997474" text="查找">
+          <HBox.margin>
+            <Insets left="2.0" />
+          </HBox.margin>
+        </Button>
+      </children>
+    </HBox>
+    <TableView id="tableView" fx:id="tableViewMain" editable="true" layoutX="0.0" layoutY="65.0" prefHeight="-1.0" prefWidth="800.0" />
+    <HBox alignment="TOP_CENTER" layoutX="0.0" layoutY="470.0" prefHeight="50.0" prefWidth="800.0">
+      <children>
+        <Button fx:id="buttonDelete" mnemonicParsing="false" onAction="#handleButtonDeleteEvent" prefHeight="27.0" text="删除选中">
+          <HBox.margin>
+            <Insets left="20.0" right="20.0" fx:id="x1" />
+          </HBox.margin>
+        </Button>
+        <Button fx:id="buttonAdd" mnemonicParsing="false" onAction="#handleButtonAddEvent" prefHeight="27.0" text="添加一项" HBox.margin="$x1" />
+      </children>
+      <padding>
+        <Insets top="10.0" />
+      </padding>
+    </HBox>
+    <CheckBox id="checkBoxAll" fx:id="checkBoxSelect" layoutX="5.0" layoutY="63.0" mnemonicParsing="false" onAction="#handleCheckBoxAllEvent" prefHeight="25.0" prefWidth="44.0" text="全选">
+      <font>
+        <Font size="11.0" />
+      </font>
+    </CheckBox>
+  </children>
+</AnchorPane>

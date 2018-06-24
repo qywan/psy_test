@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="169.0" prefWidth="365.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="psy.student.FXMLDocumentTipsController">
+  <children>
+    <VBox layoutX="0.0" layoutY="0.0" prefHeight="169.0" prefWidth="365.0">
+      <children>
+        <Pane prefHeight="169.0" prefWidth="365.0">
+          <children>
+            <Label fx:id="labelMessage" alignment="CENTER" layoutX="14.0" layoutY="78.0" prefWidth="337.0" text="消息提示！">
+              <font>
+                <Font size="14.0" />
+              </font>
+            </Label>
+          </children>
+        </Pane>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

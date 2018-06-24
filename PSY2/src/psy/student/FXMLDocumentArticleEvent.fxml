@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="psy.student.FXMLDocumentArticleEventController">
+   <children>
+      <HBox layoutX="41.0" layoutY="45.0">
+         <children>
+            <Label layoutX="41.0" layoutY="45.0" text="[心理文库]" />
+            <Label fx:id="labelArticle1" layoutX="118.0" layoutY="45.0" onMouseClicked="#handleLabelArticle1Event" prefHeight="20.0" prefWidth="260.0" text="蒙眼三角形（适用：团队合作）">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="47.0" layoutY="78.0">
+         <children>
+            <Label layoutX="47.0" layoutY="78.0" text="[心理文库]">
+               <HBox.margin>
+                  <Insets left="-5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="llabelArticle2" layoutX="129.0" layoutY="78.0" onMouseClicked="#handleLbelArticle2Event" prefHeight="20.0" prefWidth="260.0" text="别对异性交往如此紧张">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

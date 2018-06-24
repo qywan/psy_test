@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<StackPane id="StackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="psy.admin.FXMLDocumentClassController">
+  <children>
+    <VBox alignment="TOP_CENTER" prefHeight="570.0" prefWidth="791.0">
+      <children>
+        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
+          <children>
+            <ChoiceBox fx:id="choiceBoxType" prefHeight="32.0">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="项 1" />
+                  <String fx:value="项 2" />
+                  <String fx:value="项 3" />
+                </FXCollections>
+              </items>
+              <HBox.margin>
+                <Insets right="2.0" />
+              </HBox.margin>
+            </ChoiceBox>
+            <TextField id="textFieldSerar" fx:id="textFieldSearch" prefHeight="36.0" prefWidth="378.0" />
+            <Button fx:id="buttonSearch" mnemonicParsing="false" onAction="#handleButtonSearchEvent" prefHeight="32.0" text="查找">
+              <HBox.margin>
+                <Insets left="2.0" />
+              </HBox.margin>
+            </Button>
+          </children>
+        </HBox>
+        <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
+          <columns>
+            <TableColumn fx:id="tableColumnSelected" prefWidth="83.0" />
+            <TableColumn fx:id="tableColumnId" maxWidth="5000.0" minWidth="10.0" prefWidth="97.0" text="编号" />
+            <TableColumn fx:id="tableColumnName" prefWidth="95.0" text="班级名" />
+            <TableColumn fx:id="tableColumnGrade" prefWidth="65.0" text="年级" />
+                  <TableColumn fx:id="tableColumnUpdate" prefWidth="83.0" />
+          </columns>
+          <VBox.margin>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+          </VBox.margin>
+        </TableView>
+            <HBox alignment="CENTER" layoutX="10.0">
+               <children>
+                  <Button fx:id="buttonAdd" mnemonicParsing="false" onAction="#handleButtonAddEvent" text="添加">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+                  </Button>
+              <Button fx:id="buttonDelete" mnemonicParsing="false" onAction="#handleButtonDeleteEvent" text="删除" textOverrun="CLIP">
+                <VBox.margin>
+                  <Insets top="2.0" />
+                </VBox.margin>
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </HBox.margin>
+              </Button>
+               </children>
+            </HBox>
+      </children>
+    </VBox>
+      <CheckBox fx:id="checkBoxAll" layoutX="100.0" layoutY="100.0" mnemonicParsing="false" onAction="#handleCheckBoxAllEvent" text="全选" StackPane.alignment="TOP_LEFT">
+         <StackPane.margin>
+            <Insets left="5.0" top="52.0" />
+         </StackPane.margin>
+      </CheckBox>
+  </children>
+</StackPane>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="psy.student.FXMLDocumentPhotoOpenController">
+   <children>
+      <VBox layoutX="33.0" layoutY="54.0">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="134.0" layoutX="33.0" layoutY="54.0">
+               <image>
+                  <Image url="@../../res/mao.gif" />
+               </image>
+            </ImageView>
+            <Button fx:id="buttoCat" layoutX="56.0" layoutY="156.0" mnemonicParsing="false" onAction="#handleButtonCatEvent" text="猫咪">
+               <VBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="186.0" layoutY="54.0">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="175.0" layoutX="186.0" layoutY="54.0">
+               <image>
+                  <Image url="@../../res/Line.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="buttonLine" layoutX="197.0" layoutY="167.0" mnemonicParsing="false" onAction="#handleButtonLineEvent" prefHeight="30.0" prefWidth="163.0" text="你看到的线是否相同">
+               <VBox.margin>
+                  <Insets left="5.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="390.0" layoutY="54.0">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="114.0" layoutX="390.0" layoutY="54.0">
+               <image>
+                  <Image url="@../../res/illusion.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="buttonIllusion" layoutX="422.0" layoutY="167.0" mnemonicParsing="false" onAction="#handleButtonIllusionEvent" text="错觉图片">
+               <VBox.margin>
+                  <Insets left="17.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="545.0" layoutY="54.0">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="114.0" layoutX="545.0" layoutY="54.0">
+               <image>
+                  <Image url="@../../res/mao2.gif" />
+               </image>
+            </ImageView>
+            <Button fx:id="buttonCat2" layoutX="594.0" layoutY="167.0" mnemonicParsing="false" onAction="#handleButtonCat2Event" text="猫咪">
+               <VBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="38.0" layoutY="216.0">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="121.0" layoutX="38.0" layoutY="216.0">
+               <image>
+                  <Image url="@../../res/angle.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="buttonAngle" layoutX="75.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleButtonAngleEvent" text="视角错觉">
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="404.0" layoutY="215.0">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="200.0" layoutX="502.0" layoutY="216.0">
+               <image>
+                  <Image url="@../../res/heilin.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="buttonHeilin" layoutX="570.0" layoutY="374.0" mnemonicParsing="false" onAction="#handleButtonHeilinEvent" text="黑林图形">
+               <VBox.margin>
+                  <Insets left="60.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="186.0" layoutY="204.0">
+         <children>
+            <ImageView fitHeight="103.0" fitWidth="200.0" layoutX="204.0" layoutY="204.0">
+               <image>
+                  <Image url="@../../res/experiment.jpg" />
+               </image>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+      <Button fx:id="buttonExperiment" layoutX="190.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleButtonExperimentEvent" text="巴普洛夫和他的著名的实验" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="879.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text layoutX="273.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="蒙眼三角形（适用：团队合作）">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="25.0" layoutY="77.0" prefHeight="402.0" prefWidth="832.0" text="蒙着眼睛做游戏，一个团队还能合作愉快吗？因为我们是一家人，因为我们有着共同的目标，所以我们能行！&#10;　　目标：使学员互助合作形成共识，完成低难度活动。&#10;　　规则：用眼罩将所有学员的眼睛蒙上，在蒙上前先观察一下四周的环境。然后，将双手举在胸前，像保险杆般保护自己&#10;与他人。目标是整个团队找到一条很长的绳子，并将它拉成正三角形，且顶点必须对着北方。完成时每个人都能握住绳子。&#10;　　讨论：&#10;　　（1） 回想一下发生过什么事？&#10;　　（2） 各位是怎么找到绳子的？&#10;　　（3） 各位是如何拉正三角形的？&#10;　　（4） 想象和蒙上眼之前看到的差异大吗？其他人当时的想法如何？&#10;　　（5） 各位觉得绳子像什么？&#10;　　（6） 这个游戏和工作类似吗？&#10;　　（7） 游戏最有价值之处是什么？&#10;　　（8） 如果再玩一次你会怎么做？&#10;　　注意：场地应选择在户外草地上进行，以免跌倒受伤。&#10;　　变化：&#10;　　（1） 可以排列不同队形。&#10;　　（2） 绳子可以用尽（难），可以不用尽（易）。&#10;　　教具：粗棉绳一条、眼罩（依人数而定）。" />
+   </children>
+</AnchorPane>

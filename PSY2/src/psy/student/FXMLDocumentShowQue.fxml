@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="psy.student.FXMLDocumentShowQueController">
+  <children>
+    <Label fx:id="labelTitle" alignment="CENTER" prefHeight="40.0" text="问卷" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="5.0">
+      <font>
+        <Font size="14.0" fx:id="x2" />
+      </font>
+    </Label>
+    <Label fx:id="labelQuestion" font="$x2" prefHeight="40.0" prefWidth="480.0" text="题" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="53.0" />
+    <ListView id="listViewQue" fx:id="listViewOptions" prefHeight="259.0" prefWidth="480.0" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="100.0" />
+    <TextArea fx:id="textAreaText" onKeyReleased="#handleTextKeyReleased" prefWidth="-1.0" wrapText="true" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="100.0" />
+    <VBox alignment="CENTER" prefHeight="260.0" prefWidth="60.0" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+      <children>
+        <Button fx:id="buttonRIght" mnemonicParsing="false" onAction="#handleButtonRIghtEvent" opacity="0.5" prefHeight="40.0" prefWidth="60.0" text="下一题" textFill="BLACK">
+          <font>
+            <Font size="12.0" fx:id="x1" />
+          </font>
+        </Button>
+      </children>
+    </VBox>
+    <VBox alignment="CENTER" prefHeight="260.0" prefWidth="60.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="100.0">
+      <children>
+        <Button fx:id="buttonLeft" font="$x1" mnemonicParsing="false" onAction="#handleButtonLeftEvent" opacity="0.5" prefHeight="40.0" prefWidth="60.0" text="上一题" textFill="BLACK" />
+      </children>
+    </VBox>
+    <Label fx:id="labelPage" layoutX="285.0" text="0/0" AnchorPane.bottomAnchor="14.0" />
+  </children>
+</AnchorPane>
